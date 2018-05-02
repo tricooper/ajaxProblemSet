@@ -24,9 +24,9 @@ To get started with AJAX, we need to understand its syntax. Here’s the basic s
 });
 ```
 
-	In this example, the URL parameter will represent the endpoint you’d like to request, “success” if a callback that will run when the parameter has successfully received a response and returns the data. “Error” is invoked only if the request fails, it will receive a string indicating the error type. 
+In this example, the URL parameter will represent the endpoint you’d like to request, “success” if a callback that will run when the parameter has successfully received a response and returns the data. “Error” is invoked only if the request fails, it will receive a string indicating the error type. 
 	
-	NOTE: there are many ways to format an AJAX request including, but not limited to, using Promise methods. You should read here for all of the available parameters and methods. For now, this will be good enough to set up a simple response to a server. 
+*NOTE:* there are many ways to format an AJAX request including, but not limited to, using Promise methods. You should read here for all of the available parameters and methods. For now, this will be good enough to set up a simple response to a server. 
 
 
 Step 2: Basic AJAX Request
@@ -67,9 +67,9 @@ $(document).ready(function() {
 
 Step 3: Output the Data to the Page
 
-	Next, we’ll actually output the data onto the page. To do this, we’ll create new variables for the properties we’d like to display on the page and access the data then, in our onSuccess function, we’ll target the ‘append-data’ class and append these variables to the Document Object Model.
+Next, we’ll actually output the data onto the page. To do this, we’ll create new variables for the properties we’d like to display on the page and access the data then, in our onSuccess function, we’ll target the ‘append-data’ class and append these variables to the Document Object Model.
 	Here’s the updated onSuccess Function:
-	``` javascript
+``` javascript
 		function onSuccess(data) {
 		console.log(data);
 		var title = data.Title;
@@ -77,6 +77,7 @@ Step 3: Output the Data to the Page
 		$('div.append-data').append(`<p>${title}</p><img src="${poster}">`);
 	};
 ```
+
 You can see that we are storing the Title and the Poster URL from the data in the variables “title” and “poster”. We then output and append this to the page. If you reload your screen, you should make the appear.
 
 
@@ -84,6 +85,6 @@ Step 4: Next Steps, Practice problems
 
 Now that we have outputted data to a page, there are a couple more steps involved you can take on your own:
 
-1.	Add an event handler such as a button that the user can click to trigger the AJAX request and then output to the page.
-2.	Add in Input Elements that will change the AJAX request and dynamically search for movies. For example, allow the user to search for the year, title, and genre of movie they would like to see. 
-3.	Style this so it has a nice User Interface that is easy to engage with.
+	1. Add an event handler such as a button that the user can click to trigger the AJAX request and then output to the page.
+	2. Add in Input Elements that will change the AJAX request and dynamically search for movies. For example, allow the user to search for the year, title, and genre of movie they would like to see. 
+	3. Style this so it has a nice User Interface that is easy to engage with.
