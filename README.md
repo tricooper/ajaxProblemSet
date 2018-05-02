@@ -13,7 +13,7 @@ Step 1: How do I use AJAX?
 
 	To get started with AJAX, we need to understand its syntax. Here’s the basic structure of an AJAX request:
 	
-	```$(document).ready(function() {
+	$(document).ready(function() {
 
 	$.ajax({
 		url: [insert url here],
@@ -21,7 +21,7 @@ Step 1: How do I use AJAX?
 		error: [callback that will run on error]
 	});
 
-});```
+});
 
 	In this example, the URL parameter will represent the endpoint you’d like to request, “success” if a callback that will run when the parameter has successfully received a response and returns the data. “Error” is invoked only if the request fails, it will receive a string indicating the error type. 
 	
