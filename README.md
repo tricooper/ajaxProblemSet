@@ -12,7 +12,7 @@ By the end of the practice set, you’ll be able to click a button and load movi
 Step 1: How do I use AJAX?
 
 To get started with AJAX, we need to understand its syntax. Here’s the basic structure of an AJAX request:
-	``` javascript
+``` javascript
 	$(document).ready(function() {
 
 	$.ajax({
@@ -69,13 +69,14 @@ Step 3: Output the Data to the Page
 
 	Next, we’ll actually output the data onto the page. To do this, we’ll create new variables for the properties we’d like to display on the page and access the data then, in our onSuccess function, we’ll target the ‘append-data’ class and append these variables to the Document Object Model.
 	Here’s the updated onSuccess Function:
+	``` javascript
 		function onSuccess(data) {
 		console.log(data);
 		var title = data.Title;
 		var poster = data.Poster;
 		$('div.append-data').append(`<p>${title}</p><img src="${poster}">`);
 	};
-
+```
 You can see that we are storing the Title and the Poster URL from the data in the variables “title” and “poster”. We then output and append this to the page. If you reload your screen, you should make the appear.
 
 
