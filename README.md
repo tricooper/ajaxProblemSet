@@ -1,7 +1,7 @@
-AJAX How to Guide
+**AJAX How to Guide**
 
 
-Intro: What is AJAX
+**Intro: What is AJAX**
 
 In this guide, we’ll learn about using AJAX in your projects. AJAX, short for Asynchronous Javascript and XML, is a way to request data from a web server directly from your browser. In this guide, we’ll specifically be focusing on using AJAX with jQuery. You can also use AJAX with vanilla JS, but using it with jQuery allows us to easily focus on the main objective of creating an AJAX request and outputting data to a page. 
 
@@ -9,7 +9,7 @@ By the end of the practice set, you’ll be able to click a button and load movi
 
 	
 			
-Step 1: How do I use AJAX?
+**Step 1: How do I use AJAX?**
 
 To get started with AJAX, we need to understand its syntax. Here’s the basic structure of an AJAX request:
 ``` javascript
@@ -29,7 +29,7 @@ In this example, the URL parameter will represent the endpoint you’d like to r
 *NOTE:* there are many ways to format an AJAX request including, but not limited to, using Promise methods. You should read here for all of the available parameters and methods. For now, this will be good enough to set up a simple response to a server. 
 
 
-Step 2: Basic AJAX Request
+**Step 2: Basic AJAX Request**
 
 Alright, let’s start to get our hands dirty:
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
 •	Take this code and paste in your API key, reload the file and make sure you get a successful message logged to the console. 
 
 
-Step 3: Output the Data to the Page
+**Step 3: Output the Data to the Page**
 
 Next, we’ll actually output the data onto the page. To do this, we’ll create new variables for the properties we’d like to display on the page and access the data then, in our onSuccess function, we’ll target the ‘append-data’ class and append these variables to the Document Object Model.
 	Here’s the updated onSuccess Function:
@@ -81,7 +81,7 @@ Next, we’ll actually output the data onto the page. To do this, we’ll create
 You can see that we are storing the Title and the Poster URL from the data in the variables “title” and “poster”. We then output and append this to the page. If you reload your screen, you should make the appear.
 
 
-Step 4: Next Steps, Practice problems
+**Step 4: Next Steps, Practice problems**
 
 Now that we have outputted data to a page, there are a couple more steps involved you can take on your own:
 
