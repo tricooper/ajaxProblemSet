@@ -78,7 +78,7 @@ You can see that we are storing the Title and the Poster URL from the data in th
 
 Step 4: Next Steps, Practice problems
 
-	Now that we have outputted data to a page, there are a couple more steps involved you can take on your own:
+Now that we have outputted data to a page, there are a couple more steps involved you can take on your own:
 
 1.	Add an event handler such as a button that the user can click to trigger the AJAX request and then output to the page.
 2.	Add in Input Elements that will change the AJAX request and dynamically search for movies. For example, allow the user to search for the year, title, and genre of movie they would like to see. 
