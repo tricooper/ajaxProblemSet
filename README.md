@@ -39,7 +39,8 @@ o	By default, it will run on port 8080.
 
 •	Next read through the OMDb API documentation and sign up for an API Key.
 
-•	We’ll start by adding in a basic request and creating our success message to log directly into the console:
+We’ll start by adding in a basic request and creating our success message to log directly into the console:
+``` javascript
 $(document).ready(function() {
 	function onSuccess(data) {
 		console.log(data);
@@ -55,6 +56,7 @@ $(document).ready(function() {
 		error: function(error) { onError(error); }
 	});
 });
+```
 
 •	Here we can see the URL is 'http://www.omdbapi.com/?apikey=[apikey]&t=Tomb', we’ll be searching for any movies with the title of “Tomb”.
 •	The onSuccess Function will run when the request has gone through successfully.
